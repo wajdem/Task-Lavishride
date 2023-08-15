@@ -1,3 +1,105 @@
-.container_AboutUs{
-    background-image: url("../img/img_about.svg");
+* {
+  padding: 0;
+  margin: 0;
+}
+.container_AboutUs {
+  background-image: url("../img/img_about.svg");
+  min-height: 130vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  overflow: hidden;
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: #ffff;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(252, 211, 128);
+  margin-right: 40px ;
+
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: rgb(240, 158, 114);
+  color: #ffff;
+}
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+.header button {
+  color: #5e2479;
+  background-color: rgb(255, 198, 79);
+  font-size: 17px;
+  height: 50px;
+  width: 110px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: 2px solid rgb(240, 158, 114);
+}
+.text_About{
+    font-size: 75px;
+    padding: 30px;
+    color: #FFFFFF;
+}
+.text_About span{
+    color: #FFBE41;
+}
+.text_About_h4{
+    font-size: 20px;
+    padding: 30px;
+    color: #ffff;
+}
+.two_buteen_AboutUs{
+display: flex;
+align-items: center;
+padding: 30px;
+}
+.two_buteen_AboutUs button{
+  color: #5e2479;
+  background-color: rgb(255, 198, 79);
+  font-size: 17px;
+  height: 50px;
+  width: 150px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: 2px solid rgb(240, 158, 114);
+}
+.two_buteen_AboutUs img{
+  margin-left:100px ;
 }
