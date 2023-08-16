@@ -1,6 +1,11 @@
 * {
   padding: 0;
+  box-sizing: border-box;
+
   margin: 0;
+}
+body{
+  background-color: rgb(242, 237, 249);
 }
 .container_AboutUs {
   background-image: url("../img/img_about.svg");
@@ -11,7 +16,7 @@
 
 .header {
   overflow: hidden;
-  padding: 20px 10px;
+  padding: 30px 30px;
 }
 
 /* Style the header links */
@@ -100,6 +105,206 @@ padding: 30px;
   -o-border-radius: 8px;
   border: 2px solid rgb(240, 158, 114);
 }
-.two_buteen_AboutUs img{
+
+.two_buteen_AboutUs img {
   margin-left:100px ;
+}
+.two_buteen_AboutUs p{
+  color: #ffff;
+  margin-left: 13px;
+  font-size: 28px;
+}
+
+
+ /* .text_About > span {
+  font-size:0px;
+  opacity:0;
+  margin-left:-30px;
+  position:absolute;
+  font-weight:300;   
+}
+
+.text_About > span:nth-child(1) {
+  animation: roll 5s linear infinite 0s;
+}
+.text_About > span:nth-child(2) {
+  animation: roll 5s linear infinite 1s;
+}
+.text_About > span:nth-child(3) {
+  animation: roll 5s linear infinite 2s;
+}
+.text_About > span:nth-child(4) {
+  animation: roll2 5s linear infinite 3s;
+}
+
+@keyframes roll {
+  0% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(-25deg);
+  }
+  3% {
+    opacity:1;
+    transform: rotate(0deg);
+  }
+  5% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+  }
+  20% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    transform: rotate(0deg);
+  }
+  27% {
+    font-size:0px;
+    opacity:0.5;
+    margin-left:20px;
+    margin-top:100px;
+  }
+  100% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes roll2 {
+  0% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(-25deg);
+  }
+  3% {
+    opacity:1;
+    transform: rotate(0deg);
+  }
+  5% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+  }
+  30% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    transform: rotate(0deg);
+  }
+  37% {
+    font-size:1500px;
+    opacity:0;
+    margin-left:-1000px;
+    margin-top:-800px;
+  }
+  100% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(15deg);
+  }
+}  */
+
+.Our_Best_Programs_1{
+padding: 30px;
+color: #73509f;
+margin-left: 13px;
+font-size: 28px;
+display: flex;
+align-items: center;
+}
+.Our_Best_Programs_1 p{
+margin-left: 15px;
+}
+.container_Services_box1{
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 29px;
+  padding: 30px;
+  width: 94%;
+  height: 275px;
+  margin-left: 50px;
+  border-radius: 30px;
+}
+
+.container_Services_box2{
+  color: #ffff;
+  background-color: rgb(166, 114, 241);
+  width: 102%;
+  height: 247px;
+  margin-left: -13px;
+  border-radius: 30px;
+  margin-top: -17px;
+  display: grid;
+  overflow: hidden;
+  text-align: center;
+  grid-template-columns: auto auto auto auto;
+  gap: 22px;
+}
+
+
+
+
+
+
+.card {
+  color: #ffff;
+  border-radius: 30px;
+  width: 103%;
+  height: 247px;
+  background-color: rgb(169, 119, 241);
+  padding: 20px;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  transition: 0.6s ease-in;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.card::before {
+  color: #ffff;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -15px;
+  right: -15px;
+  background: rgb(255, 194, 72);
+  height:220px;
+  width: 25px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease-out;
+}
+
+.card:hover::before{
+  color: #ffff;
+
+    transition-delay:0.2s ;
+
+  transform: scale(40);
+}
+ .card h1{
+  color: #ffff;
+
+ }
+.card p{
+  color: #ffff;
+
+    padding: 10px 0;
+    font-size: 20px ;
 }
